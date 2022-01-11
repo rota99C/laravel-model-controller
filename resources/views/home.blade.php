@@ -1,7 +1,12 @@
 @extends ('layout.app')
 
 @section ('content')
-<h1>ciao</h1>
-
+@foreach ($movies as $movie)
+<h1>{{$movie -> title}}</h1>
+<p>{{$movie -> original_title}}</p>
+<p>{{$movie -> nationaly}}</p>
+<p>{{$movie -> date}}</p>
+<p>{{$movie -> vote}}</p>
+@endforeach
 
 @endsection
